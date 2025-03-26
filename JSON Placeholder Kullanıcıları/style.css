@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f1b7d7;
+}
+
+#user-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.user-card {
+    background-color: #cdedf5;
+    border: 1px solid #1b87a1;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card-section {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.card-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.section-title i {
+    margin-right: 5px;
+}
+
+.address-info p, .company-info p {
+    margin: 5px 0;
+}
+#user-cards-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+}
+
+.user-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+
+@media (max-width: 1200px) {
+    #user-cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    }
+}
+
+@media (max-width: 768px) {
+    #user-cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    }
+}
+
+@media (max-width: 576px) {
+    #user-cards-container {
+        grid-template-columns: 1fr;
+    }
+}
